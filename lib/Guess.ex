@@ -28,7 +28,7 @@ defmodule Guess do
   end
 
   def guess(user_guess, picked_num, count) when user_guess < picked_num do
-    IO.gets("Too low. Guess again: ")
+    IO.gets("Too low. Guess again:  ")
     |> parse_input()
     |> guess(picked_num, count + 1)
   end
